@@ -1,0 +1,22 @@
+.random-face {
+  height: 50vh;
+  width: 50vh;
+  margin-top: 10vh;
+}
+.buttons{
+  bottom: 0;
+  margin-top: 20vh;
+}
+.button{
+  border-color: #ef6eae;
+  color: #ef6eae;
+  background: none;
+  border: 4px solid;
+  font: bold;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+.container {
+  text-align: center;
+}
