@@ -23,7 +23,7 @@ import {
       state('round', style({ borderRadius: '100%' })),
 
       transition('* => rotate', [
-        animate(2000, keyframes([
+        animate(4500, keyframes([
           style({ transform: 'rotateX(180deg)', offset: 0.3}),
           style({ transform: 'rotateX(0deg)',  offset: 0.7})
         ])
@@ -31,8 +31,8 @@ import {
       ]),
 
       transition('* => crazy', [
-        animate(2000,
-          style({ transform: 'rotate(3000deg) scale3d(0.8, 2, 0.2)'})
+        animate(4000,
+          style({ transform: 'rotate(1000deg) scale3d(0.8, 2, 1)'})
         )
       ]),
 
@@ -53,7 +53,8 @@ import {
          stagger(500, [
           animate('0.5s', style({ opacity: 0 }))
          ]),
-      ]))
+      ])),
+      state('bye', style({  opacity: 0  })),
     ])
   ]
 })
@@ -72,7 +73,6 @@ export class AppComponent {
 
   clearEffect(): void {
     this.faceEffect = '';
-    this.containerEffect = '';
   }
 
 }
